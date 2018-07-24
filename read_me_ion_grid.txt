@@ -12,10 +12,18 @@ data_dict  = {
              }
 
 'ion_column.npy' -> ion coulmn density for a grid of number density, radiation field, metallicity ,column density, ionname
-'linename_list.npy' -> ion list
-hdens_list -> log number density
-Z_list ->  log metallicity
-NH_list -> log column density
-G -> log radiation field
+
+'hdens_list.npy' -> log number density
+'Z_list.npy'     -> log metallicity
+'NH_list.npy'    -> log column density
+'G_list.npy'     -> log radiation field
+'ion_list.npy'   -> ion list
+
+grid = np.load('ion_column.npy')
+
+grid[i_n,i_z,i_N,i_G,i_ion]  # in cm-2
+
+
+
 
 
